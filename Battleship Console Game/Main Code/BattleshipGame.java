@@ -21,18 +21,15 @@ public class BattleshipGame {
             } while(userSize < 1 || userSize > 4);
 
             switch (userSize) {
-                case 1:Game4x4();
-                    break;
+                case 1 -> Game4x4();
 
-                case 2:Game5x5();
-                    break;
+                case 2 -> Game5x5();
                 
-                case 3:Game6x6();
-                    break;
+                case 3 -> Game6x6();
                 
-                case 4:Game8x8();
-                    break;
+                case 4 -> Game8x8();
             }
+            
             char playAgainChoice='y';
             do{
                 System.out.print("Wanna play again? [Y]yes or [N]no:");
